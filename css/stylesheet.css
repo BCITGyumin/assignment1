@@ -1,18 +1,25 @@
 body {
     color: #256993;
-    background-color: #FAF4EC;
+    background-color: #F3E9DE;
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    margin: 0;
 }
 
 /* Article Structure
 ------------------------------------ */
-article {
-    display: flex;
-}
-
-.flex_item1 {
+.aside {
     flex: 0 1 20%;
+    background-color: #FAF4EC;
 }
 
-.flex_item2 {
+.main {
     flex: 0 1 auto;
+    text-align: center;
+}
+
+/* Aside Nav
+------------------------------------ */
+.aside_heading {
+    text-align: center;
 }
