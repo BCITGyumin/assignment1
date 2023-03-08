@@ -58,5 +58,11 @@ body {
     text-align: start;
     margin: 10px 15px;
     background-color: #FAF4EC;
-    border: 3px solid #256993;
+    border: 3px solid #88A0FF;
+}
+
+.placeholder p {
+    font-family: 'Golos Text', sans-serif;
+    color: #404040;
+    margin: 10px 10px;
 }
