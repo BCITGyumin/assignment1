@@ -18,6 +18,7 @@ body {
 .main {
     flex: 0 1 auto;
     text-align: center;
+    height: 100vh;
 }
 
 /* Aside Nav
@@ -43,6 +44,9 @@ body {
     font-family: 'Golos Text', sans-serif;
     padding: 5px;
 }
+
+/* Button
+------------------------------------ */
 
 /* Button Option 1
 ------------------------------------ */
@@ -78,4 +82,12 @@ body {
 
 .button_option_2 button {
     margin-left: 10px;
+}
+
+/* Footer
+------------------------------------ */
+footer {
+    width: 80%;
+    position: absolute;
+    bottom: 0
 }
