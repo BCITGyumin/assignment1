@@ -47,6 +47,13 @@ body {
 
 /* Button
 ------------------------------------ */
+button {
+    border-radius: 12px;
+    padding: 15px;
+    color: white;
+    font-size: 10px;
+    border: 0;
+}
 
 /* Button Option 1
 ------------------------------------ */
@@ -54,6 +61,14 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 0 15px;
+}
+
+.button_newnote {
+    background-color: #375F68;
+}
+
+.button_darktheme {
+    background-color: #56536A;
 }
 
 /* Placeholder
@@ -82,6 +97,14 @@ body {
 
 .button_option_2 button {
     margin-left: 10px;
+}
+
+.button_save {
+    background-color: #375f68;
+}
+
+.button_cancel {
+    background-color: #9b332c;
 }
 
 /* Footer
