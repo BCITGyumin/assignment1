@@ -111,7 +111,7 @@ button {
 footer {
     width: 80%;
     position: absolute;
-    bottom: 0
+    bottom: 0;
 }
 
 /* Mobile Size
@@ -124,6 +124,6 @@ footer {
         visibility: hidden;
     }
     footer {
-        width: 100%
+        width: 100%;
     }
 }
