@@ -74,7 +74,7 @@ button {
 /* Placeholder
 ------------------------------------ */
 .placeholder {
-    block-size: 200px;
+    block-size: 15rem;
     text-align: start;
     margin: 10px 15px;
     background-color: #FAF4EC;
@@ -113,4 +113,18 @@ footer {
     width: 80%;
     position: absolute;
     bottom: 0
+}
+
+/* Mobile Size
+------------------------------------ */
+@media screen and (max-width: 500px) {
+    body {
+        grid-template-columns: 0 1fr;
+    }
+    .aside {
+        visibility: hidden;
+    }
+    footer {
+        width: 100%
+    }
 }
