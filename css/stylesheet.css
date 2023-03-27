@@ -118,11 +118,13 @@ footer {
 ------------------------------------ */
 @media screen and (max-width: 500px) {
     body {
-        grid-template-columns: 0 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 1fr;
     }
-    .aside {
-        visibility: hidden;
+    .main {
+        height: 79vh;
     }
+
     footer {
         width: 100%;
     }
