@@ -16,3 +16,17 @@ function darkTheme()
 }
 
 darkbtn.addEventListener("click", darkTheme)
+
+
+// Cancel Button
+const cancelbtn = document.querySelector(".button_cancel")
+const btnOption2 = document.querySelector(".button_option_2")
+const placeholderContainer = document.querySelector(".placeholder_div")
+
+function hideButton()
+{
+    btnOption2.classList.add("hide")
+    placeholderContainer.classList.add("hide")
+}
+
+cancelbtn.addEventListener("click", hideButton)

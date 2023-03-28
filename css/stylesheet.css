@@ -130,16 +130,26 @@ footer {
     }
 }
 
+
+/*------------------------------- JavaScript -------------------------------*/
+
+
 /* Dark Mode 
 ------------------------------------ */
 
-.darktheme_deeper{
+.darktheme_deeper {
     background-color: #222831;
     color: #EEEEEE
 }
 
-.darktheme_lighter{
+.darktheme_lighter {
     background-color: #393E46;
     color: #EEEEEE
 }
 
+/* Cancel Button
+------------------------------------ */
+
+.hide {
+    display: none;
+}
