@@ -129,3 +129,17 @@ footer {
         width: 100%;
     }
 }
+
+/* Dark Mode 
+------------------------------------ */
+
+.darktheme_deeper{
+    background-color: #222831;
+    color: #EEEEEE
+}
+
+.darktheme_lighter{
+    background-color: #393E46;
+    color: #EEEEEE
+}
+
