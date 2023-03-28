@@ -50,4 +50,27 @@ newNoteBtn.addEventListener("click", newNoteButton);
 
 
 // Notes Array
-const notesArray = []
+const notesArray = [];
+
+
+// Save Button
+const saveBtn = document.querySelector(".button_save");
+const asideList = document.querySelector(".aside_list");
+
+function saveNote()
+{
+    title = prompt("Please write the title:");
+    body = placeholder.value;
+    
+    notesArray.push(
+        {
+            "title": title,
+            "body": body
+        }
+    )
+    
+    const lst = document.createElement("li")
+    asideList.appendChild(lst).innerText = title
+}
+
+saveBtn.addEventListener("click", saveNote);
