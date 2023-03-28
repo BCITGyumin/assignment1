@@ -47,3 +47,7 @@ function newNoteButton()
 }
 
 newNoteBtn.addEventListener("click", newNoteButton);
+
+
+// Notes Array
+const notesArray = []
