@@ -42,15 +42,15 @@ function newNoteButton()
     {
         btnOption2.classList.remove("hide");
         placeholderContainer.classList.remove("hide");
-        placeholder.value = 'This is a placeholder';
     }
+    placeholder.value = 'This is a placeholder';
 }
 
 newNoteBtn.addEventListener("click", newNoteButton);
 
 
 // Notes Array
-const notesArray = [];
+const notesArray = [{title:"note one", body:"this is my first note"}, {title:"note two", body:"this is my second note"}];
 
 
 // Save Button
@@ -61,16 +61,43 @@ function saveNote()
 {
     title = prompt("Please write the title:");
     body = placeholder.value;
-    
-    notesArray.push(
-        {
+    if (!(title === ""))
+    {
+        notesArray.push({
             "title": title,
             "body": body
-        }
-    )
-    
-    const lst = document.createElement("li")
-    asideList.appendChild(lst).innerText = title
+        })
+        const lst = document.createElement("li");
+        asideList.appendChild(lst).innerText = title;
+        lst.classList.add("aside_title");
+    }
 }
 
 saveBtn.addEventListener("click", saveNote);
+
+
+// Side Bar List Loading
+const titleList = document.querySelector(".aside_list");
+
+function sidebarLoad(event) 
+{
+    const clickedTitleElmt = event.target;
+    const clickedTitle = clickedTitleElmt.innerText;
+
+    for (let item of notesArray)
+    {
+        if(item["title"] === clickedTitle)
+        {
+            placeholder.value = item["body"];
+            
+            if (btnOption2Attribute[0].className.includes("hide"))
+            {
+                btnOption2.classList.remove("hide");
+                placeholderContainer.classList.remove("hide");
+            }
+        }
+    }
+}
+
+
+titleList.addEventListener("click", sidebarLoad);

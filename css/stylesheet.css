@@ -32,6 +32,10 @@ body {
     list-style-type: square;
 }
 
+.aside_title {
+    cursor: pointer;
+}
+
 /* Main menu 
 ------------------------------------ */
 .main_menu {
@@ -53,6 +57,7 @@ button {
     color: white;
     font-size: 10px;
     border: 0;
+    cursor: pointer;
 }
 
 /* Button Option 1
@@ -147,7 +152,7 @@ footer {
     color: #EEEEEE
 }
 
-/* Cancel Button
+/* Hide
 ------------------------------------ */
 
 .hide {
